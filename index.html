@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Verydarkblue: 'hsl(233, 47%, 7%)',
+            Darkdesaturatedblue: 'hsl(244, 38%, 16%)',
+            Softviolet: 'hsl(277, 64%, 61%)',
+            White: 'hsl(0, 0%, 100%)',
+            paraWhite: 'hsla(0, 0%, 100%, 0.75)',
+            percWhite: 'hsla(0, 0%, 100%, 0.6)'
+          },
+          screens: {
+            'xl': '1440px'
+          },
+          fontFamily: {
+            'inter': 'Inter,sans-serif',
+            'lexend': 'Lexend Deca,sans-serif'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <main class="xl:h-screen w-full h-full py-24 grid place-items-center bg-Verydarkblue">
+    <article class="xl:w-[80%] xl:h-fit xl:flex-row flex flex-col-reverse w-[90%] h-fit bg-Darkdesaturatedblue rounded-lg">
+      <div class="xl:w-1/2 xl:p-10 xl:pl-14 xl:pr-15 xl:h-full xl:space-y-16 w-full h-fit flex flex-col ">
+        <div class="xl:text-left xl:space-y-4 py-6 font-inter text-center flex flex-col space-y-2">
+          <h1 class="xl:p-0 xl:pr-6 xl:text-4xl xl:leading-[3rem] px-12 text-White text-2xl font-bold ">Get <span class="text-Softviolet">insights</span> that help your business grow.</h1>
+          <p class="xl:p-0 xl:pr-24 xl:text-[16px] xl:mt-4 xl:leading-7 xl:tracking-wide px-11 text-paraWhite text-sm leading-6">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.</p>
+        </div>
+        <div class="xl:flex-row xl:space-x-16 xl:items-end xl:pb-0 flex flex-col text-center space-y-6 pb-8">
+          <div class="xl:text-left text-center">
+            <h2 class="xl:text-2xl font-inter text-lg font-bold text-White">10k+</h2>
+            <p class="font-lexend text-paraWhite">COMPANIES</p>
+          </div>
+          <div class="xl:text-left text-center">
+            <h2 class="xl:text-2xl font-inter text-lg font-bold text-White">314</h2>
+            <p class="font-lexend text-paraWhite">TEMPLATES</p>
+          </div>
+          <div class="xl:text-left text-center">
+            <h2 class="xl:text-2xl font-inter text-lg font-bold text-White">12M+</h2>
+            <p class="font-lexend text-paraWhite">QUERIES</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="xl:w-1/2 relative w-full h-2/5">
+        <img class="xl:block xl:w-full hidden rounded-lg" src="./images/image-header-desktop.jpg" alt="favicon"/>
+        <img class="xl:hidden block rounded-lg" src="./images/image-header-mobile.jpg" alt="favicon"/>
+        <div class="w-full h-full bg-Softviolet bg-opacity-70 absolute top-0">
+
+        </div>
+      </div>
+    </article>
+    
+  </main>
+  
+</body>
+</html>
